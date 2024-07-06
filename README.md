@@ -1,1 +1,1 @@
-# Rock-Paper-Scissors
+This a Rock, Paper, Scissor game which can be played on the browser console
