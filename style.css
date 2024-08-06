@@ -1,0 +1,231 @@
+@font-face {
+    font-family: Mario;
+    src: url(./fonts/Emulogic-zrEw.ttf);
+}
+
+@font-face {
+    font-family: Game-name;
+    src: url(./fonts/Akira\ Expanded\ Demo.otf);
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1F2937;
+}
+
+.text, .your-choice, .cpu-choice{
+    font-family: Mario;
+    color: black;
+}
+
+#wrapper {
+    width: 500px;
+    margin: 0 auto;
+    height: 770px;
+    background-color: rgb(211, 211, 34);
+    border: 5px black solid;
+    border-radius: 20px;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    background-color: #1F2937;
+    margin: 0 auto;
+    padding: 0 5px;
+    width: 460px;
+    height: 325px;
+    border: 35px black solid;
+    border-radius: 15px;
+    background-color: grey;
+}
+
+.header {
+    height: 15px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    height: 100%;
+    padding: 5px;
+}
+
+.choices {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    height: 100%;
+}
+
+.your-choice, .cpu-choice {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 110px;
+    height: 100%;
+    color: black;
+    padding: 5px;
+    font-weight: 900;
+}
+
+.your-choice img {
+    width: 100px;
+}
+
+.cpu-choice img {
+    width: 100px;
+}
+
+.your-choice p {
+    text-align: center;
+}
+
+.cpu-choice p {
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 5px;
+    margin-top: 65px;
+}
+
+.BOSS, .COFFEE-MACHINE, .INTERN {
+    background: #1F2937;
+    border-radius: 50%;
+    border: 4px black solid;
+    transition: transform 0.2s ease;
+    width: 90px;
+    height: 90px;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    height: 375px;
+}
+
+.BOSS:hover {
+    background: #354863;
+}
+
+.BOSS:active {
+    transform: scale(0.95);
+}
+
+.COFFEE-MACHINE:hover {
+    background: #354863;
+}
+
+.COFFEE-MACHINE:active {
+    transform: scale(0.95);
+}
+
+.INTERN:hover {
+    background: #354863;
+}
+
+.INTERN:active {
+    transform: scale(0.95);
+}
+
+.BOSS img{
+    width: 50px;
+}
+
+.COFFEE-MACHINE img{
+    width: 50px;
+}
+
+.INTERN img{
+    width: 50px;
+}
+
+.upper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 258px;
+
+}
+
+.restart, .start {
+    width: 50px;
+    height: 50px;
+    border: 4px black solid;
+    border-radius: 50%;
+    font-family: Game-name;
+}
+
+.restart {
+    background: blue;
+}
+
+.start {
+    background: red;
+}
+
+.plus {
+    margin-right: 60px;
+    background: none;
+    border: none;
+}
+
+.round {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    font-weight: 900;
+    font-family: Game-name;
+    font-size: 10px;
+}
+
+.title {
+    font-family: Game-name;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+
+.plus img {
+    width: 180px;
+}
+
+.plus:active {
+    transform: scale(0.95);
+}
+
+.first-side:hover {
+    background: rgb(59, 59, 248);
+}
+
+.second-side:hover {
+    background: rgb(248, 72, 72);
+}
+
+.first-side:active {
+    transform: scale(0.95);
+}
+
+.second-side:active {
+    transform: scale(0.95);
+}
