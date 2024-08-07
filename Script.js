@@ -113,11 +113,14 @@ function getHumanChoice(e) {
 
   function gameHandler(e) {
     let humanChoice = getHumanChoice(e);
+    const audio = document.querySelector(".btn-sound");
 
     if(humanChoice && start) {
       let computerChoice = getComputerChoice();
       playRound(humanChoice, computerChoice);
     }
+
+    audio.play();
   };
 
   const startBtn = document.querySelector(".start");
