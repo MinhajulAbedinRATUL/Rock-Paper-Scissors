@@ -13,7 +13,7 @@ function getComputerChoice() {
     }
 
     else {
-      cpuChoice.src = "./icon/internship.png";
+      cpuChoice.src = "./icon/intern.png";
       return "INTERN";
     }
   }
@@ -31,7 +31,7 @@ function getHumanChoice(e) {
         yourChoice.src = "./icon/espresso.png";
         return 'COFFEE MACHINE';
     } else if (target.classList.contains('INTERN')) {
-        yourChoice.src = "./icon/internship.png";
+        yourChoice.src = "./icon/intern.png";
         return 'INTERN';
     } else {
         return null;
